@@ -11,6 +11,7 @@ body{
     /* background-color: #272A37; /*344055, 2f3643*/
     background: url(../img/fundo.png) no-repeat center;
     background-size: cover;
+    padding: 0px 30px;
 
 }
 
@@ -30,6 +31,10 @@ header nav > a{
     margin-left: 70px;
 }
 
+header nav > a span{
+    color: #138DD9;
+}
+
 header nav ul{
     text-align: left;
     position: absolute;
@@ -45,10 +50,11 @@ header nav ul li{
 
 header nav ul li a{
     color: #6C7483;
+    font-weight: 600;
 }
 
 header nav ul li :nth-of-type(1){
-    padding-left: 90px;
+    padding-left: 60px;
     padding-right: 20px;
 }
 
@@ -58,7 +64,7 @@ section{
 }
 
 section p{
-    color: #9AA5B5;
+    color: #8991a0;
     font-weight: 500;
     text-transform: uppercase;
     margin-bottom: 20px;
@@ -87,26 +93,18 @@ section h4 a{
 }
 
 section form .background{
-    background: #6C7483;
-    border-radius: 15px;
+    background: #39404d;
+    border-radius: 20px;
     width: 40%;
     margin-bottom: 30px;
+    padding-top: 12px;
     height: 60px;
-}
-
-section form .background label{
-    font-size: 0.7em;
-    margin-left: 25px;
-    margin-top: 10px;
-    margin-bottom: 5px;
-    border: 1px solid red;
-    display: block;
 }
 
 section form .background:nth-of-type(1){
     width: 18%;
     display: inline-block;
-    margin-right: 4%;
+    margin-right: 45px;
 }
 
 section form .background:nth-of-type(2){
@@ -114,23 +112,64 @@ section form .background:nth-of-type(2){
     display: inline-block;
 }
 
+section form .background label{
+    font-size: 0.7em;
+    color: #cfcfcf;
+    margin-left: 27px;
+    margin-bottom: 5px;
+    display: block;
+}
+
+section form .background p{
+    display: inline-block;
+    position: relative;
+    left: 11%;
+    bottom: 7%;
+}
+
+section form .background .move{
+    position: relative;
+    left: 21%;
+    bottom: 7%;
+}
+
+section form .background input::placeholder{
+    color: #c7c3c3;
+}
+
 section form div input[type="text"]{
     width: 70%;
-    padding-left: 25px;
+    padding-left: 27px;
+    color: white;
 }
 
 section form div input[type="email"]{
     width: 70%;
-    padding-left: 25px;
+    padding-left: 27px;
+    color: white;
 }
 
 section form div input[type="password"]{
     width: 70%;
-    padding-left: 25px;
+    padding-left: 27px;
+    color: white;
+}
+
+section form input[type="submit"]{
+    border: none;
+    background-color: #138DD9;
+    width: 40%;
+    color: white;
+    padding: 20px 20px 20px 20px;
+    border-radius: 30px;
 }
 
 section form div input{
     outline: none;
     background: transparent;
     border: none;
+}
+
+footer{
+    text-align: end;
 }
