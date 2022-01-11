@@ -9,9 +9,9 @@
 
 body{
     /* background-color: #272A37; /*344055, 2f3643*/
-    background: url(../img/fundo.png) no-repeat center;
+    background: url(../img/sucesso.png) no-repeat center;
     background-size: cover;
-    padding: 0px 30px;
+    padding: 0px 100px;
 
 }
 
@@ -27,8 +27,20 @@ header{
 header nav > a{
     font-size: 1.5em;
     display: inline-block;
-    margin-top: 50px;
-    margin-left: 70px;
+    position: relative;
+    top: 35px;
+    right: 3.5%;
+}
+
+header nav > a > img{
+    width: 5%;
+    position: relative;
+    top: 10px;
+    right: 3%;
+}
+
+header nav > a > p{
+    display: inline-block;
 }
 
 header nav > a span{
@@ -39,7 +51,7 @@ header nav ul{
     text-align: left;
     position: absolute;
     top: 7%;
-    left: 20%;
+    left: 23%;
 }
 
 header nav ul li{
@@ -59,22 +71,23 @@ header nav ul li :nth-of-type(1){
 }
 
 section{
-    margin-top: 70px;
-    margin-left: 70px;
+    margin-top: 150px;
+    margin-bottom: 5%;
 }
 
 section p{
     color: #8991a0;
+    font-size: 20px;
     font-weight: 500;
     text-transform: uppercase;
     margin-bottom: 20px;
 }
 
 section h1{
-    font-size: 2.5em;
+    font-size: 3.5em;
     font-weight: 600;
     color: white;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
 }
 
 section h4{
@@ -94,21 +107,28 @@ section h4 a{
 
 section form .background{
     background: #39404d;
+    border: 2px solid #39404d;
     border-radius: 20px;
-    width: 40%;
-    margin-bottom: 30px;
+    width: 43%;
+    margin-bottom: 20px;
     padding-top: 12px;
-    height: 60px;
+    height: 65px;
+    transition: all 0.2s;
+}
+
+section form .background:hover{
+    border: 2px solid #138DD9;
+    box-shadow: 0px 0px 5px 5px #138dd96c;
 }
 
 section form .background:nth-of-type(1){
-    width: 18%;
+    width: 20%;
     display: inline-block;
-    margin-right: 45px;
+    margin-right: 30px;
 }
 
 section form .background:nth-of-type(2){
-    width: 18%;
+    width: 20%;
     display: inline-block;
 }
 
@@ -116,7 +136,7 @@ section form .background label{
     font-size: 0.7em;
     color: #cfcfcf;
     margin-left: 27px;
-    margin-bottom: 5px;
+    margin-bottom: 1px;
     display: block;
 }
 
@@ -124,13 +144,11 @@ section form .background p{
     display: inline-block;
     position: relative;
     left: 11%;
-    bottom: 7%;
+    bottom: 12%;
 }
 
 section form .background .move{
-    position: relative;
     left: 21%;
-    bottom: 7%;
 }
 
 section form .background input::placeholder{
@@ -158,10 +176,16 @@ section form div input[type="password"]{
 section form input[type="submit"]{
     border: none;
     background-color: #138DD9;
-    width: 40%;
+    width: 43%;
     color: white;
+    margin-top: 2.5%;
     padding: 20px 20px 20px 20px;
     border-radius: 30px;
+    transition: all 0.5s;
+}
+
+section form input[type="submit"]:hover{
+    box-shadow: 0px 0px 5px 5px #138dd96c;
 }
 
 section form div input{
@@ -171,5 +195,10 @@ section form div input{
 }
 
 footer{
-    text-align: end;
+    margin-bottom: 3%;
+}
+
+footer img{
+    position: relative;
+    left: 93%;
 }
