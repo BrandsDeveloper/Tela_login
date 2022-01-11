@@ -4,10 +4,133 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-family: "Sen", sans-serif;
+    font-family: 'Sen';
 }
 
 body{
-    background-color: #2f3643; /*344055*/
+    /* background-color: #272A37; /*344055, 2f3643*/
+    background: url(../img/fundo.png) no-repeat center;
+    background-size: cover;
+
 }
 
+a{
+    text-decoration: none;
+    color: white;
+}
+
+header{
+    height: 100px;
+}
+
+header nav > a{
+    font-size: 1.5em;
+    display: inline-block;
+    margin-top: 50px;
+    margin-left: 70px;
+}
+
+header nav ul{
+    text-align: left;
+    position: absolute;
+    top: 7%;
+    left: 20%;
+}
+
+header nav ul li{
+    display: inline-block;
+    font-weight: 400;
+    padding: 10px;
+}
+
+header nav ul li a{
+    color: #6C7483;
+}
+
+header nav ul li :nth-of-type(1){
+    padding-left: 90px;
+    padding-right: 20px;
+}
+
+section{
+    margin-top: 70px;
+    margin-left: 70px;
+}
+
+section p{
+    color: #9AA5B5;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+section h1{
+    font-size: 2.5em;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 25px;
+}
+
+section h4{
+    font-weight: 500;
+    color: #6C7483;
+    margin-bottom: 50px;
+}
+
+section span{
+    color: #138DD9;
+}
+
+section h4 a{
+    color: #138DD9;
+    font-weight: 400;
+}
+
+section form .background{
+    background: #6C7483;
+    border-radius: 15px;
+    width: 40%;
+    margin-bottom: 30px;
+    height: 60px;
+}
+
+section form .background label{
+    font-size: 0.7em;
+    margin-left: 25px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    border: 1px solid red;
+    display: block;
+}
+
+section form .background:nth-of-type(1){
+    width: 18%;
+    display: inline-block;
+    margin-right: 4%;
+}
+
+section form .background:nth-of-type(2){
+    width: 18%;
+    display: inline-block;
+}
+
+section form div input[type="text"]{
+    width: 70%;
+    padding-left: 25px;
+}
+
+section form div input[type="email"]{
+    width: 70%;
+    padding-left: 25px;
+}
+
+section form div input[type="password"]{
+    width: 70%;
+    padding-left: 25px;
+}
+
+section form div input{
+    outline: none;
+    background: transparent;
+    border: none;
+}
